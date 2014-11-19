@@ -68,11 +68,11 @@
             </objects>
             <point key="canvasLocation" x="400" y="324"/>
         </scene>
-        <!--Item-->
+        <!--Контакты-->
         <scene sceneID="sFV-yZ-2s0">
             <objects>
                 <tableViewController id="GbB-Ow-VZo" customClass="ContactListTVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UnO-Te-2Ft">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="40" sectionFooterHeight="22" id="UnO-Te-2Ft">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,32 +86,32 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" rowHeight="69" id="TTl-YU-ORW" customClass="ContactListCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactListCell" rowHeight="69" id="TTl-YU-ORW" customClass="ContactListCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TTl-YU-ORW" id="fkW-SV-1Jb">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zx5-eG-341">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zx5-eG-341">
                                             <rect key="frame" x="10" y="10" width="49" height="49"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вася Пупкин" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t2v-vP-uUS">
-                                            <rect key="frame" x="69" y="10" width="241" height="20"/>
+                                            <rect key="frame" x="69" y="10" width="1521" height="20"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wlx-w8-Qkv">
-                                            <rect key="frame" x="69" y="30" width="241" height="15"/>
+                                            <rect key="frame" x="69" y="30" width="881" height="20"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WdN-0C-bCA">
-                                            <rect key="frame" x="320" y="0.0" width="88" height="69"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <rect key="frame" x="960" y="0.0" width="88" height="69"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.29411764705882354" green="1" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <state key="normal" title="Позвонить">
@@ -124,11 +124,37 @@
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="callButton" destination="WdN-0C-bCA" id="DjW-WI-CCH"/>
                                     <outlet property="nameLabel" destination="t2v-vP-uUS" id="4zJ-ZJ-qsD"/>
                                     <outlet property="phoneLabel" destination="Wlx-w8-Qkv" id="9LE-Uf-Tn9"/>
                                     <outlet property="photoImageView" destination="zx5-eG-341" id="yGa-Rx-ZnI"/>
+                                    <outletCollection property="gestureRecognizers" destination="Hys-Sp-ylj" appends="YES" id="yvP-dm-iaM"/>
+                                    <outletCollection property="gestureRecognizers" destination="omj-I8-xge" appends="YES" id="IL1-bC-drb"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactListCellNoPhoneNumber" rowHeight="50" id="YcS-Ab-ir4" customClass="ContactListCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YcS-Ab-ir4" id="pa9-xd-eey">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="TMJ-FK-OpV">
+                                            <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вася Пупкин" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TdG-We-jNg">
+                                            <rect key="frame" x="69" y="10" width="1521" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="TdG-We-jNg" id="8kx-NJ-snA"/>
+                                    <outlet property="photoImageView" destination="TMJ-FK-OpV" id="A2U-bs-uxK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -137,7 +163,7 @@
                             <outlet property="delegate" destination="GbB-Ow-VZo" id="Vml-FS-qox"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="6N5-fl-0wC"/>
+                    <tabBarItem key="tabBarItem" title="Контакты" id="6N5-fl-0wC"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
@@ -155,6 +181,16 @@
                         <outlet property="searchResultsDelegate" destination="GbB-Ow-VZo" id="FL0-Zw-Lbe"/>
                     </connections>
                 </searchDisplayController>
+                <swipeGestureRecognizer direction="right" id="Hys-Sp-ylj">
+                    <connections>
+                        <action selector="didSwipeCell:" destination="GbB-Ow-VZo" id="DZD-ZD-23u"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="omj-I8-xge">
+                    <connections>
+                        <action selector="didSwipeCell:" destination="GbB-Ow-VZo" id="JKj-SS-ayN"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="400" y="-941.93333333333328"/>
         </scene>

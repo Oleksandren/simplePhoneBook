@@ -19,7 +19,10 @@
 }
 -(UIImage *)photoImage
 {
-    return [UIImage imageWithData:_photoData];
+    if (_photoData.length > 0)
+        return [UIImage imageWithData:_photoData];
+    else
+        return [UIImage imageNamed:@"noPhoto"];
 }
 
 @end

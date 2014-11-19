@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContactListTVC : UITableViewController
+@interface ContactListTVC : UITableViewController <UISearchBarDelegate>
 
 @end

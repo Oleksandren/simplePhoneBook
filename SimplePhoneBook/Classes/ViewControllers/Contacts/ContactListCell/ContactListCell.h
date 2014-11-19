@@ -11,5 +11,6 @@
 @interface ContactListCell : UITableViewCell
 
 @property (nonatomic, weak) ContactData *contactData;
+- (void)didSwipe:(UISwipeGestureRecognizer *)sgr;
 
 @end

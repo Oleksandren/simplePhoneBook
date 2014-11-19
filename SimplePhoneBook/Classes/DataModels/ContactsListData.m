@@ -7,6 +7,7 @@
 //
 
 #import "ContactsListData.h"
+#import "ContactData.h"
 #import <Foundation/Foundation.h>
 
 @implementation ContactsListData
@@ -16,6 +17,10 @@
     self = [super init];
     if (self)
     {
+        originContacts = cl;
+        originContactsWithoutPhoneNumber =c;
+        originContactsData = @[originContacts, originContactsWithoutPhoneNumber];
+        
         contacts = cl;
         contactsWithoutPhoneNumber = c;
         contactsData = @[contacts, contactsWithoutPhoneNumber];
@@ -57,6 +62,33 @@
 - (ContactData *)contactForSection:(NSInteger)section row:(NSInteger)row
 {
     return contactsData[section][row];
+}
+
+- (void)makeSearch:(NSString *)searchString
+{
+    if (searchString && searchString.length > 0)
+    {
+        NSMutableArray *c = [NSMutableArray new];
+        NSMutableArray *cwp = [NSMutableArray new];
+        for (ContactData *temp in originContacts)
+            if ([temp.name rangeOfString:searchString].location != NSNotFound)
+                [c addObject:temp];
+        
+        
+        for (ContactData *temp in originContactsWithoutPhoneNumber)
+            if ([temp.name rangeOfString:searchString].location != NSNotFound)
+                [cwp addObject:temp];
+        
+        contacts = c;
+        contactsWithoutPhoneNumber = cwp;
+        contactsData = @[c, cwp];
+    }
+    else
+    {
+        contacts = originContacts;
+        contactsWithoutPhoneNumber = originContactsWithoutPhoneNumber;
+        contactsData = originContactsData;
+    }
 }
 
 @end

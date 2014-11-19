@@ -15,6 +15,7 @@
 		117E66761A0BFFB3008762A6 /* SimplePhoneBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E66751A0BFFB3008762A6 /* SimplePhoneBookTests.m */; };
 		117E66841A0C01DA008762A6 /* ContactData.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E66831A0C01DA008762A6 /* ContactData.m */; };
 		117E66881A0C0305008762A6 /* ContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E66871A0C0305008762A6 /* ContactManager.m */; };
+		11A29C4A1A0E4782002D5A79 /* noPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A29C491A0E4782002D5A79 /* noPhoto.png */; };
 		11E08BFE1A0C301700731536 /* ContactListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E08BFD1A0C301700731536 /* ContactListTVC.m */; };
 		11E08C061A0C36B700731536 /* ContactListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E08C051A0C36B700731536 /* ContactListCell.m */; };
 		11E08C091A0C41CA00731536 /* ContactsListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E08C081A0C41CA00731536 /* ContactsListData.m */; };
@@ -46,6 +47,7 @@
 		117E66831A0C01DA008762A6 /* ContactData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactData.m; sourceTree = "<group>"; };
 		117E66861A0C0305008762A6 /* ContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
 		117E66871A0C0305008762A6 /* ContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactManager.m; sourceTree = "<group>"; };
+		11A29C491A0E4782002D5A79 /* noPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noPhoto.png; sourceTree = "<group>"; };
 		11E08BFC1A0C301700731536 /* ContactListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListTVC.h; sourceTree = "<group>"; };
 		11E08BFD1A0C301700731536 /* ContactListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListTVC.m; sourceTree = "<group>"; };
 		11E08C041A0C36B700731536 /* ContactListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListCell.h; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		117E66551A0BFFB2008762A6 /* SimplePhoneBook */ = {
 			isa = PBXGroup;
 			children = (
+				11A29C471A0E4782002D5A79 /* Resource */,
 				117E667F1A0C01BA008762A6 /* Classes */,
 				117E665A1A0BFFB3008762A6 /* AppDelegate.h */,
 				117E665B1A0BFFB3008762A6 /* AppDelegate.m */,
@@ -166,6 +169,22 @@
 				117E66871A0C0305008762A6 /* ContactManager.m */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		11A29C471A0E4782002D5A79 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				11A29C481A0E4782002D5A79 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		11A29C481A0E4782002D5A79 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				11A29C491A0E4782002D5A79 /* noPhoto.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		11E08BFA1A0C301700731536 /* Contacts */ = {
@@ -268,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				117E66651A0BFFB3008762A6 /* Main.storyboard in Resources */,
+				11A29C4A1A0E4782002D5A79 /* noPhoto.png in Resources */,
 				117E666A1A0BFFB3008762A6 /* LaunchScreen.xib in Resources */,
 				117E66671A0BFFB3008762A6 /* Images.xcassets in Resources */,
 			);

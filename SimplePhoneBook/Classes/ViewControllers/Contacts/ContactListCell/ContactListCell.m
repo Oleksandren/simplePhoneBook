@@ -25,14 +25,8 @@
 {
     [photoImageView setImage:contactData.photoImage];
     [nameLabel setText:contactData.name];
-    if (!contactData.phoneNumber)
-    {
+    if (contactData.phoneNumber)
         [phoneLabel setText:contactData.phoneNumber];
-        UISwipeGestureRecognizer *sgr = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
-        
-        sgr.direction = UISwipeGestureRecognizerDirectionRight | UISwipeGestureRecognizerDirectionLeft;
-        [self addGestureRecognizer:sgr];
-    }
 }
 
 - (void)didSwipe:(UISwipeGestureRecognizer *)sgr
@@ -52,6 +46,12 @@
 {
     NSString *tel = [NSString stringWithFormat:@"tel:%@", phoneLabel.text];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:tel]];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    photoImageView.layer.cornerRadius = photoImageView.bounds.size.height / 2;
 }
 
 @end

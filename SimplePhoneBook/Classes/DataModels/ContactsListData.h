@@ -20,9 +20,18 @@ ContactsSectionType;
 
 @interface ContactsListData : NSObject
 {
+    //Origin
+    NSArray *originContactsData;
+    NSArray *originContacts;
+    NSArray *originContactsWithoutPhoneNumber;
+    
+    //Filtered
     NSArray *contactsData;
     NSArray *contacts;
     NSArray *contactsWithoutPhoneNumber;
+    
+    
+    
 }
 
 - (instancetype)initWithContactList:(NSArray *)cl andContactsWithoutPhoneNumber:(NSArray *)c;
@@ -37,5 +46,5 @@ ContactsSectionType;
 - (NSInteger)numberOfContactsInSection:(NSInteger)section;
 - (ContactsSectionType)typeForSection:(NSInteger)section;
 - (ContactData *)contactForSection:(NSInteger)section row:(NSInteger)row;
-
+- (void)makeSearch:(NSString *)searchString;
 @end
