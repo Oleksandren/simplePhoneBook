@@ -12,7 +12,6 @@
 		117E66651A0BFFB3008762A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117E66631A0BFFB3008762A6 /* Main.storyboard */; };
 		117E66671A0BFFB3008762A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117E66661A0BFFB3008762A6 /* Images.xcassets */; };
 		117E666A1A0BFFB3008762A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117E66681A0BFFB3008762A6 /* LaunchScreen.xib */; };
-		117E66761A0BFFB3008762A6 /* SimplePhoneBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E66751A0BFFB3008762A6 /* SimplePhoneBookTests.m */; };
 		117E66841A0C01DA008762A6 /* ContactData.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E66831A0C01DA008762A6 /* ContactData.m */; };
 		117E66881A0C0305008762A6 /* ContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 117E66871A0C0305008762A6 /* ContactManager.m */; };
 		11A29C4A1A0E4782002D5A79 /* noPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A29C491A0E4782002D5A79 /* noPhoto.png */; };
@@ -20,16 +19,6 @@
 		11E08C061A0C36B700731536 /* ContactListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E08C051A0C36B700731536 /* ContactListCell.m */; };
 		11E08C091A0C41CA00731536 /* ContactsListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E08C081A0C41CA00731536 /* ContactsListData.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		117E66701A0BFFB3008762A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 117E664B1A0BFFB2008762A6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 117E66521A0BFFB2008762A6;
-			remoteInfo = SimplePhoneBook;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		117E66531A0BFFB2008762A6 /* SimplePhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,9 +29,6 @@
 		117E66641A0BFFB3008762A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		117E66661A0BFFB3008762A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		117E66691A0BFFB3008762A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		117E666F1A0BFFB3008762A6 /* SimplePhoneBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePhoneBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		117E66741A0BFFB3008762A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		117E66751A0BFFB3008762A6 /* SimplePhoneBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePhoneBookTests.m; sourceTree = "<group>"; };
 		117E66821A0C01DA008762A6 /* ContactData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactData.h; sourceTree = "<group>"; };
 		117E66831A0C01DA008762A6 /* ContactData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactData.m; sourceTree = "<group>"; };
 		117E66861A0C0305008762A6 /* ContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactManager.h; sourceTree = "<group>"; };
@@ -64,13 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		117E666C1A0BFFB3008762A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				117E66551A0BFFB2008762A6 /* SimplePhoneBook */,
-				117E66721A0BFFB3008762A6 /* SimplePhoneBookTests */,
 				117E66541A0BFFB2008762A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				117E66531A0BFFB2008762A6 /* SimplePhoneBook.app */,
-				117E666F1A0BFFB3008762A6 /* SimplePhoneBookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,23 +89,6 @@
 			children = (
 				117E66571A0BFFB3008762A6 /* Info.plist */,
 				117E66581A0BFFB3008762A6 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		117E66721A0BFFB3008762A6 /* SimplePhoneBookTests */ = {
-			isa = PBXGroup;
-			children = (
-				117E66751A0BFFB3008762A6 /* SimplePhoneBookTests.m */,
-				117E66731A0BFFB3008762A6 /* Supporting Files */,
-			);
-			path = SimplePhoneBookTests;
-			sourceTree = "<group>";
-		};
-		117E66731A0BFFB3008762A6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				117E66741A0BFFB3008762A6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -226,24 +186,6 @@
 			productReference = 117E66531A0BFFB2008762A6 /* SimplePhoneBook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		117E666E1A0BFFB3008762A6 /* SimplePhoneBookTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 117E667C1A0BFFB3008762A6 /* Build configuration list for PBXNativeTarget "SimplePhoneBookTests" */;
-			buildPhases = (
-				117E666B1A0BFFB3008762A6 /* Sources */,
-				117E666C1A0BFFB3008762A6 /* Frameworks */,
-				117E666D1A0BFFB3008762A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				117E66711A0BFFB3008762A6 /* PBXTargetDependency */,
-			);
-			name = SimplePhoneBookTests;
-			productName = SimplePhoneBookTests;
-			productReference = 117E666F1A0BFFB3008762A6 /* SimplePhoneBookTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,10 +197,6 @@
 				TargetAttributes = {
 					117E66521A0BFFB2008762A6 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					117E666E1A0BFFB3008762A6 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 117E66521A0BFFB2008762A6;
 					};
 				};
 			};
@@ -276,7 +214,6 @@
 			projectRoot = "";
 			targets = (
 				117E66521A0BFFB2008762A6 /* SimplePhoneBook */,
-				117E666E1A0BFFB3008762A6 /* SimplePhoneBookTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,13 +227,6 @@
 				11A29C4A1A0E4782002D5A79 /* noPhoto.png in Resources */,
 				117E666A1A0BFFB3008762A6 /* LaunchScreen.xib in Resources */,
 				117E66671A0BFFB3008762A6 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		117E666D1A0BFFB3008762A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,23 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		117E666B1A0BFFB3008762A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				117E66761A0BFFB3008762A6 /* SimplePhoneBookTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		117E66711A0BFFB3008762A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 117E66521A0BFFB2008762A6 /* SimplePhoneBook */;
-			targetProxy = 117E66701A0BFFB3008762A6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		117E66631A0BFFB3008762A6 /* Main.storyboard */ = {
@@ -453,40 +367,6 @@
 			};
 			name = Release;
 		};
-		117E667D1A0BFFB3008762A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SimplePhoneBookTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplePhoneBook.app/SimplePhoneBook";
-			};
-			name = Debug;
-		};
-		117E667E1A0BFFB3008762A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SimplePhoneBookTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplePhoneBook.app/SimplePhoneBook";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,15 +384,6 @@
 			buildConfigurations = (
 				117E667A1A0BFFB3008762A6 /* Debug */,
 				117E667B1A0BFFB3008762A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		117E667C1A0BFFB3008762A6 /* Build configuration list for PBXNativeTarget "SimplePhoneBookTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				117E667D1A0BFFB3008762A6 /* Debug */,
-				117E667E1A0BFFB3008762A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
